@@ -69,7 +69,7 @@ sudo systemctl enable php-fpm
 ```
 ![Project Screenshot](/Images/php-start-status.png)
 
-### Step 4: Terminating Your instance
+## Step 4: Terminating Your instance
 
 1. Your use are done then got to AWS console 
 2. Click on EC2 → instance 
