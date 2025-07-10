@@ -22,7 +22,7 @@
 ```bash
 ssh -i "pem-server-key.pem" ec2-user@ec2-85-53-26-21.compute-1.amazonaws.com
 ```
-![Project Screenshot](/Images/connect.jpg)
+![Project Screenshot](/Images/connect.png)
 
 ## Step 3: Install LEMP in **Amazon Linux**
 
@@ -42,7 +42,7 @@ sudo yum install nginx -y
 sudo systemctl start nginx
 sudo systemctl enable nginx
 ```
-![Project Screenshot](/Images/nginx-start-status.jpg)
+![Project Screenshot](/Images/nginx-start-status.png)
 
 3. Install MYSQL your LAMP server then Start & enable
 
@@ -54,7 +54,7 @@ sudo yum install mariadb105-server -y
 sudo systemctl start mariadb
 sudo systemctl enable mariadb
 ```
-![Project Screenshot](/Images/mysql-start-status.jpg)
+![Project Screenshot](/Images/mysql-start-status.png)
 
 4. Install PHP your LAMP server then Start & enable
 
@@ -66,7 +66,7 @@ sudo yum install php -y
 sudo systemctl start php-fpm
 sudo systemctl enable php-fpm
 ```
-![Project Screenshot](/Images/php-start-status.jpg)
+![Project Screenshot](/Images/php-start-status.png)
 
 ### Step 4: Terminating Your instance
 
@@ -77,4 +77,4 @@ sudo systemctl enable php-fpm
 5. Choose **Terminate (delete) instance**
 6. Now click delete
 
-![Project Screenshot](/images/delete-instance.jpg)
+![Project Screenshot](/images/delete-instance.png)
