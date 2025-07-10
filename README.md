@@ -15,6 +15,7 @@
     - Instance type → t2.micro
     - Key pair → pem_server_key
     - security group → launch-wizard-1
+      
 ![Project Screenshot](/Images/LEMP launch.png)
 
 ## Step 2: SSH to connect the EC2 Instance
