@@ -15,12 +15,14 @@
     - Instance type → t2.micro
     - Key pair → pem_server_key
     - security group → launch-wizard-1
+![Project Screenshot](/Images/LEMP launch.jpg)
 
 ## Step 2: SSH to connect the EC2 Instance
 
 ```bash
 ssh -i "pem-server-key.pem" ec2-user@ec2-85-53-26-21.compute-1.amazonaws.com
 ```
+![Project Screenshot](/Images/connect.jpg)
 
 ## Step 3: Install LEMP in **Amazon Linux**
 
@@ -40,6 +42,7 @@ sudo yum install nginx -y
 sudo systemctl start nginx
 sudo systemctl enable nginx
 ```
+![Project Screenshot](/Images/nginx-start-status.jpg)
 
 3. Install MYSQL your LAMP server then Start & enable
 
@@ -51,6 +54,7 @@ sudo yum install mariadb105-server -y
 sudo systemctl start mariadb
 sudo systemctl enable mariadb
 ```
+![Project Screenshot](/Images/mysql-start-status.jpg)
 
 4. Install PHP your LAMP server then Start & enable
 
@@ -62,3 +66,15 @@ sudo yum install php -y
 sudo systemctl start php-fpm
 sudo systemctl enable php-fpm
 ```
+![Project Screenshot](/Images/php-start-status.jpg)
+
+### Step 4: Terminating Your instance
+
+1. Your use are done then got to AWS console 
+2. Click on EC2 → instance 
+3. Select instance You want to terminated
+4. Click on Instance state 
+5. Choose **Terminate (delete) instance**
+6. Now click delete
+
+![Project Screenshot](/images/delete-instance.jpg)
